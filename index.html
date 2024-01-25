@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABG1pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAxIDc5LjE0NjI4OTk3NzcsIDIwMjMvMDYvMjUtMjM6NTc6MTQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTkyMzYzODhBMzFCMTFFRUIwMDBFNUI4NUU4N0Y4RjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTkyMzYzODdBMzFCMTFFRUIwMDBFNUI4NUU4N0Y4RjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTMyBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUMzRDk5OTZBMTE3MTFFRUE0RTVGRkZBRDMwOERGM0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUMzRDk5OTdBMTE3MTFFRUE0RTVGRkZBRDMwOERGM0EiLz4gPGRjOnJpZ2h0cz4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RXVnZW5lIFNraWRhbm92PC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzpyaWdodHM+IDxkYzpjcmVhdG9yPiA8cmRmOlNlcT4gPHJkZjpsaT53d3cuaHlwbm90eXBlLnJ1PC9yZGY6bGk+IDwvcmRmOlNlcT4gPC9kYzpjcmVhdG9yPiA8ZGM6dGl0bGU+IDxyZGY6QWx0PiA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPlNwcnVjZSBUcmVlIElzb2xhdGVkPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4K5gf2AAAADFBMVEXM/8wAZjNmmZn///9VvehrAAAABHRSTlP///8AQCqp9AAAAr5JREFUeNrcmtt2hCAMRTfx//+5gtbOKJckBB9K1+rTtMfkXAg4bNbF9sKfCOtBeAPkjUrYK2E5iCT5FyAiKclmbZjt46R9YRYY1mbt3Uosa1eRVUbZ+7WOk8x5yiCsBTmX7EWxCCR9LhE9/TgKOVFYAcJ3IaxvV2YlvJLvOoy1qEHkRkla0i7eAfksRtb4JIfKH8aygERcLjGAgJ95lNK6I+RtJRjk6ZIUTTwHyK0a0dOC3ojPjmlFpnuYyv+3BD5W7T7oZ6W6DPxjNvtt5wpN4SpCKPFFxYLXK1qQXUVPXqJBktskKpDcKJlgXQnSkq+ExkoPJMqM9FJFJMzx+cdvebWEm8WE7SftgJwHgbZ+LSMFzog3SRnnbvW5Zjmp7O3PKGYWpHS8DaM7P6BL+Rlt9UAodh6RUj7jJx6ixNVtF41p62mUATMDEBl68bdpbpCyVF7ptwz/dqLPYgXIoJJyYTgLgih4P5cTBJJydfzCFpCQo6MXc73SkR9Uyf4wuIg/uNRWgV1dRzYaeiUOEPSqUhxSUZChKEh8ZiRrMl+fZkNP5god2ssxTmfI6YDcVLz3gmW8qwkWAVRLoucRxfz4LEgNgs0kI5ERYZPfZLGBmILxqsK2nxiZ+JsmGxIjqlu9S2n8w4N+72KLRkHByWUQW49IHAoTBYjPIZL/UTkjq8zo5Jw+w0FsdHetGoiMjnANnOOwIhp1leuz2zuGyZIwXzs6ti/mpvkJkCxGcbardookKIO7AxKzY7Zm62JiNn04UgWCb9O9GD8zqR/1xlyUSpOqYxEt2Y7h5Iu63r0EDV0ppi3ZvmyOASRfmB9Qg9AXrpQbXRVRDZTTT5W3ylyOS3tv8/CH8+buejL5oldOkKP9bOc0rjilj173Un7JeS1QQGK/iFEesryJ2TtzPv/Cb3tcPQHe+H6XY/0IMACbSFjsaZBHKAAAAABJRU5ErkJggg==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/lda2rmz.css" />
+    
+    <title>Julgranstugan</title>
+    <script type="module" crossorigin src="/ToDoList-ForGithubPages/assets/index-adc681cf.js"></script>
+    <link rel="stylesheet" href="/ToDoList-ForGithubPages/assets/index-6195bb3a.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">Julgranstugan</h1>
+      <button class="c-button c-button--primary c-button--cta" id="cta">
+        Se våra granar
+      </button>
+    </header>
+
+    <main id="main" class="l-wrapper">
+      <button class="c-button c-button--secondary" id="main-cart-button">
+        <h1 class="bi bi-cart" id="cart-icon"></h1>
+      </button>
+      <ul class="l-list" id="product-list"></ul>
+
+      <!-- produktsida -->
+      <div class="l-wrapper" id="wrapper-product-page">
+        <section class="c-product-page">
+          <button
+            class="c-product-page__close-button c-button c-button--secondary"
+            id="product-page-close-button"
+          >
+            Stäng
+          </button>
+          <figure class="c-product-page__figure">
+            <img class="c-product-page__image" id="product-page-image" />
+          </figure>
+          <div class="c-product-page__header">
+            <h2 class="c-product-page__title" id="product-page-title">
+              Produkt
+            </h2>
+          </div>
+          <article class="product-page__article" id="product-page-article">
+            <p class="c-product-page__info" id="product-page-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              delectus saepe neque minus explicabo eius nihil, placeat, eos
+              quas, amet fuga dolores doloremque quisquam necessitatibus
+              dolorem. Eos minus accusantium consequuntur.
+            </p>
+          </article>
+          <button class="c-button c-button--tertiary" id="read-more">
+            Läs mer
+          </button>
+          <p class="c-product-page__size" id="product-page-size"></p>
+
+          <p class="c-product-page__price" id="product-page-price"></p>
+          <button
+            class="c-button c-button--primary"
+            id="product-page-cart-button"
+          >
+            Lägg i varukorg
+          </button>
+        </section>
+      </div>
+      <section class="c-checkout" id="checkout">
+        <h2 class="c-checkout__title" id="checkout-title">Kassa</h2>
+        <button class="c-button c-button--secondary" id="checkout-close-button">
+          stäng
+        </button>
+        <section class="cart--checkout" id="cart-checkout">
+          <h3 class="cart__heading">Varukorg</h3>
+          <p id="total-price-checkout"></p>
+          <ul id="checkout-cart-items" class="cart__items"></ul>
+        </section>
+
+        <form class="form-validation">
+          <div class="mb-2">
+            <label for="fullname" class="form-label">Namn</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullname"
+              name="fullname"
+              required
+            />
+            <div class="invalid-feedback" id="fullname-feedBack">
+              Var god fyll i både för och efternamn.
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="address" class="form-label">Adress</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              name="address"
+              required
+            />
+            <div class="invalid-feedback" id="adress-feedBack">
+              Var god fyll i din adress.
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="zipcode" class="form-label">Postnummer</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zipcode"
+              name="zipcode"
+              required
+            />
+            <div class="invalid-feedback" id="zipcode-feedBack">
+              Var god fyll i ditt postnummer.
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+            <div class="invalid-feedback" id="email-feedBack">
+              Var god fyll i en giltig e-postadress.
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="cellPhone" class="form-label">Tel</label>
+            <input
+              type="tel"
+              pattern="[0-9]{10}"
+              class="form-control"
+              id="cellPhone"
+              name="cellPhone"
+              required
+            />
+            <div class="invalid-feedback" id="cellPhone-feedBack">
+              Var god fyll i ditt telefonnummer (10 siffror).
+            </div>
+          </div>
+          <div class="mb-2 col-md-12">
+            <button class="c-button c-button--primary" id="modalButton">
+              Genomför köp
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <section class="cart" id="cart">
+        <div class="cart__header">
+          <h2 class="cart__title">Varukorg</h2>
+        </div>
+        <ul class="l-list-cart" id="cart-items"></ul>
+        <div class="cart__total-price"></div>
+        <div class="cart__button-wrapper">
+          <button class="cart__checkout-button c-button c-button--primary">Till kassan</button>
+          <button class="cart__close-button c-button c-button--secondary">Stäng</button>
+        </div>
+      </section>
+    </aside>
+
+    <section class="modalContainer">
+      <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <section class="footer__content">
+        <div class="footer__info">
+          <div class="footer__contact">
+            <h3>Kontakt</h3>
+            <p>070 174 06 28</p>
+            <div class="footer__adress">
+              <h3>Adress</h3>
+              <p>Barrvägen 24</p>
+              <p>921 99, Granträsk</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="footer__about">
+          <h2>Om oss</h2>
+          <p>
+            Välkommen till Julgranstugan, ditt ultimata mål för julgranar i alla
+            dess former! Vi tror på att varje gran förtjänar ett hem, oavsett om
+            den är liten och busig eller stor och ståtlig. Vår passion är att
+            matcha varje kund med den perfekta granen för deras unika behov och
+            smak.
+          </p>
+        </div>
+        <div class="footer__media">
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+        </div>
+      </section>
+      <p class="footer__copyright">&copy; Grupp3 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
