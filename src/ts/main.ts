@@ -5,7 +5,7 @@ import { Product } from "./models/Product";
 const products = [
   new Product(
     "Rödgran",
-    "../red_spruce3.webp",
+    "/red_spruce3.webp",
     "230 – 260 cm",
     499,
     "Rödgranen, en symbol för julens stämning, är känd för sina stadiga grenar och doftande barr som sprider en friskhet som förtrollar. Med dess frodiga barrverk och praktfulla utseende blir denna gran ett lysande inslag i juldekorationerna. Med rätt underhåll sitter barren kvar länge och ger en varaktig skönhet som fyller hemmet med en känsla av tradition och glädje under helgerna.",
@@ -21,7 +21,7 @@ const products = [
   ),
   new Product(
     "Blågran",
-    "/public/blue_spruce.webp",
+    "/blue_spruce.webp",
     "180 – 230 cm",
     699,
     "Blågranen är en storslagen symbol för vinterns charm och elegans. Med sina mjuka, silverblå barr skapar denna gran en atmosfär av frostig skönhet i varje rum. Dess kompakta och välmående grenverk ger en perfekt plats att hänga julens dekorationer och ljus, medan dess hållbara barr behåller sin färg och form under hela säsongen. Blågranen erbjuder en unik och förtrollande touch till julens firande och blir snabbt hjärtat i ditt hem under denna festliga tid.",
