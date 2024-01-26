@@ -7,7 +7,7 @@
 @use "checkout";
 @use "thankyou";
 @use "footer";
-@use 'keyframes' as k;
+@use "keyframes" as k;
 
 *,
 p {
@@ -34,17 +34,16 @@ h3 {
   display: flex;
   height: 100vh;
   background: linear-gradient(to top, rgba(black, 0.4), rgba(whitesmoke, 0.1)),
-    url("src/assets/img/resized_images/hero.webp") center/cover
-      no-repeat;
+    url("/hero.webp") center/cover no-repeat;
   color: v.$bright-text;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   &__logo {
     font-size: v.$fontSizeXL;
-    @include m.lg{
-    font-size: v.$fontSizeXXL;
-  }
+    @include m.lg {
+      font-size: v.$fontSizeXXL;
+    }
   }
 }
 
@@ -60,8 +59,6 @@ h3 {
   right: 1rem;
 }
 
-
-
 .form-validation {
   display: flex;
   align-items: center;
@@ -72,57 +69,51 @@ h3 {
   }
 }
 
-
-
-
 .modal {
+  @include k.fade;
+  .modal-content {
+    position: relative;
+    padding: 1rem 0 6rem 0;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    h4 {
+      margin-top: 3.5rem;
+    }
 
-@include k.fade;
-.modal-content {
-position: relative; 
-padding: 1rem 0 6rem 0;
-border-radius: 1.5rem;
-font-size: 1.8rem;
-h4{
-  margin-top:3.5rem;
-}
+    .purchaseModalEmail {
+      font-size: v.$fontSizeMedium;
+    }
 
-.purchaseModalEmail {
-  font-size: v.$fontSizeMedium;
-}
+    .order-details-container {
+      border: 1px solid gray;
+      border-radius: 1.5rem;
+      padding: v.$fontSizeMedium;
+      font-size: 1.2rem;
+      margin: 0 auto;
+    }
 
-.order-details-container {
-  border: 1px solid gray;
-  border-radius: 1.5rem;
-  padding: v.$fontSizeMedium;
-  font-size: 1.2rem;
-  margin: 0 auto; 
-}
+    .order-details-item {
+      border-bottom: 1px solid gray;
+      margin: v.$standard-margin 0 0 0;
+    }
 
-.order-details-item {
-  border-bottom: 1px solid gray; 
-  margin: v.$standard-margin 0 0 0;
-}
+    .order-details-item:last-child {
+      border-bottom: none;
+    }
 
-.order-details-item:last-child {
-  border-bottom: none; 
-}
-
-.bi.bi-x-lg {
-  position: absolute;
-  top: -10px;
-  right: 18px;
-  font-size: 2.5rem;
-  padding: 10px;
-  cursor: pointer;
-  width: 43.66px;
-
-}
-}
-&.--active{
-  display: block;
-
-}
+    .bi.bi-x-lg {
+      position: absolute;
+      top: -10px;
+      right: 18px;
+      font-size: 2.5rem;
+      padding: 10px;
+      cursor: pointer;
+      width: 43.66px;
+    }
+  }
+  &.--active {
+    display: block;
+  }
 }
 
 .checkmark {
@@ -135,6 +126,5 @@ h4{
   margin: 2rem auto;
   transform: skew(0, 0);
 
-@include k.skew;
-
+  @include k.skew;
 }
