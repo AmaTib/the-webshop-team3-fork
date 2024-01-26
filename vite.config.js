@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/ToDoList-ForGithubPages/",
+  base: "/the-webshop-team3-fork/",
 });
