@@ -37,7 +37,7 @@ const products = [
   ),
   new Product(
     "Rödgran",
-    "/red_spruce2.webp",
+    "./red_spruce2.webp",
     "100 – 140 cm",
     250,
     "Rödgranen är julens symbol av skönhet och elegans. Dess frodiga barrverk skänker inte bara en frisk doft utan också en levande touch till varje hem. Med en rödgran i huset skapas en atmosfär av tradition och fröjd, där varje barrstrå förmedlar känslan av en härlig julstund.",
@@ -45,7 +45,7 @@ const products = [
   ),
   new Product(
     "Rödgran",
-    "/red_spruce_xl.webp",
+    "./red_spruce_xl.webp",
     "300 – 350 cm",
     990,
     "Inget fångar julens anda som den klassiska rödgranen. Dess slanka silhuett och intensiva gröna barr skapar en fantastisk atmosfär och sprider en ljuvlig doft i varje vrå. Rödgranen är mer än en dekoration – den är själva hjärtat i julens festligheter och bjuder in till en tid av gemenskap och värme.",
