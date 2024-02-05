@@ -21,7 +21,7 @@ const products = [
   ),
   new Product(
     "Blågran",
-    "/blue_spruce.webp",
+    "../blue_spruce.webp",
     "180 – 230 cm",
     699,
     "Blågranen är en storslagen symbol för vinterns charm och elegans. Med sina mjuka, silverblå barr skapar denna gran en atmosfär av frostig skönhet i varje rum. Dess kompakta och välmående grenverk ger en perfekt plats att hänga julens dekorationer och ljus, medan dess hållbara barr behåller sin färg och form under hela säsongen. Blågranen erbjuder en unik och förtrollande touch till julens firande och blir snabbt hjärtat i ditt hem under denna festliga tid.",
@@ -29,7 +29,7 @@ const products = [
   ),
   new Product(
     "Bosnisk tall",
-    "/bosnian_pine.webp",
+    "./bosnian_pine.webp",
     "180 – 230 cm",
     750,
     "Bosnisk tall, med sin ståtliga och majestätiska gestalt, är en symbol för vinterens skönhet och styrka. Dess karaktäristiska mörkgröna barr och robusta grenar skapar en imponerande kuliss för julens festligheter. Med en naturlig symmetri och en doft av skogens friskhet blir denna tall en enastående centralpunkt för dekorationer och ljus. Dess hållbara kvalitet och långvariga skönhet gör den till det perfekta valet för att införa en känsla av tradition och elegans i ditt hem under julen.",
