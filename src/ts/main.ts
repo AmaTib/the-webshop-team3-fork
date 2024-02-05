@@ -5,7 +5,7 @@ import { Product } from "./models/Product";
 const products = [
   new Product(
     "Rödgran",
-    "./assets/red_spruce3.webp",
+    "./../red_spruce3.webp",
     "230 – 260 cm",
     499,
     "Rödgranen, en symbol för julens stämning, är känd för sina stadiga grenar och doftande barr som sprider en friskhet som förtrollar. Med dess frodiga barrverk och praktfulla utseende blir denna gran ett lysande inslag i juldekorationerna. Med rätt underhåll sitter barren kvar länge och ger en varaktig skönhet som fyller hemmet med en känsla av tradition och glädje under helgerna.",
